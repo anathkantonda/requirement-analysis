@@ -24,7 +24,7 @@ Here are three key reasons why it is indispensable:
 - **Acts as a "Single Source of Truth".** The formal requirements document (like an SRS) becomes the definitive guide for the entire team. Designers know what to design, developers know what to build, and testers know what to test against.
 - **Minimizes Ambiguity.** Clear, detailed, and validated requirements remove guesswork and misinterpretation, leading to a smoother workflow and a higher-quality end product.
 
-# Understanding the Core of Requirement Analysis
+# Key Activities in Requirement Analysis.
 
 At its heart, Requirement Analysis is a process of discovery and communication. It seeks to answer fundamental questions such as:
 
