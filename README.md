@@ -118,3 +118,32 @@ Based on the architecture for a hotel booking app like Airbnb or Oyo, we can cat
 -   **Localisation:**
     -   The platform's user interface must be available in multiple languages, starting with English and Spanish.
     -   The system must support and display prices in multiple currencies (e.g., `USD`, `EUR`, `INR`), with clear conversion rates.
+
+
+# Use Case Diagrams
+
+### What are Use Case Diagrams?
+
+Use Case Diagrams are a type of Unified Modelling Language (UML) diagram used in software engineering to describe the functional requirements of a system. They depict the interactions between users (actors) and the system, illustrating how users achieve their goals by interacting with the system's functionalities (use cases). Essentially, they provide a high-level view of what the system does from the perspective of an external user.
+
+**Key components of a Use Case Diagram:**
+
+* **Actors:** Represent external entities (people, other systems, or hardware) that interact with the system. They are typically depicted as stick figures.
+* **Use Cases:** Represent a specific function or action that the system performs in response to an actor's request. They are typically depicted as ovals.
+* **Associations:** Lines connecting actors to use cases, indicating that an actor interacts with a particular use case.
+* **System Boundary:** A rectangle that encloses all the use cases, representing the scope of the system.
+
+### Benefits of Use Case Diagrams
+
+* **Clarity and Understanding:** They provide a clear and concise way to understand the system's functionality from a user's perspective, making it easier for stakeholders (developers, clients, and users) to grasp the system's purpose.
+* **Requirement Elicitation:** They are excellent tools for gathering and defining functional requirements, as they focus on what the system *does* for its users.
+* **Communication:** They serve as a common visual language for communication among different teams and stakeholders, reducing misunderstandings.
+* **Scope Definition:** They help in defining the boundaries of the system, clearly indicating what is included and excluded from the system's functionality.
+* **Test Case Generation:** Each use case can directly lead to the creation of test cases, ensuring that all functionalities are thoroughly tested.
+* **User-Centric Design:** By focusing on the user's interaction with the system, they promote a user-centric design approach.
+
+### Booking System Use Case Diagram
+
+Below is a use case diagram illustrating the functionalities of the booking system.
+
+![Booking System Use Case Diagram](alx-booking-uc.png)
