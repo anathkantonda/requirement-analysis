@@ -147,3 +147,58 @@ Use Case Diagrams are a type of Unified Modelling Language (UML) diagram used in
 Below is a use case diagram illustrating the functionalities of the booking system.
 
 ![Booking System Use Case Diagram](alx-booking-uc.png)
+
+# Acceptance Criteria
+
+### Importance of Acceptance Criteria in Requirement Analysis
+
+**Acceptance Criteria** are specific, verifiable conditions that a software feature or user story **must** satisfy to be considered complete and acceptable to stakeholders. They are crucial for:
+
+* **Clarity:** Providing an unambiguous understanding of requirements for developers, testers, and stakeholders.
+* **Definition of "Done":** Establishing clear, testable conditions for when a feature is truly finished, which helps prevent scope creep and rework.
+* **Test Case Generation:** Directly informing the creation of comprehensive test plans and scenarios.
+* **Quality Assurance:** Ensuring the delivered software meets business needs and user expectations.
+* **Improved Communication:** Serving as a common language for discussing and validating functionality across teams.
+
+### Example: Checkout Feature in a Booking Management System
+
+Here's an example of acceptance criteria for a "Checkout" feature in a booking management system:
+
+**Feature/User Story:** As a user, I want to securely check out and pay for my booking, so that I can confirm my reservation.
+
+**Acceptance Criteria:**
+
+* **AC1: Display Booking Summary**
+    * **Given** the user is on the checkout page,
+    * **When** the page loads,
+    * **Then** the page **must** display a clear summary of the selected booking(s) including:
+        * Item name(s) (e.g., "Hotel Room - Standard Double")
+        * Dates/Times (e.g., "Check-in: 2025-07-15, Check-out: 2025-07-20")
+        * Quantity (e.g., "1 Room")
+        * Price per item
+        * Total price, including any taxes or fees.
+
+* **AC2: Secure Payment Options**
+    * **Given** the user is on the checkout page,
+    * **When** they are prompted for payment,
+    * **Then** the system **must** offer at least two secure payment methods (e.g., Credit Card, PayPal).
+    * **And** sensitive payment information (e.g., credit card numbers) **must** be securely transmitted and not stored directly on the system.
+
+* **AC3: Payment Processing Success**
+    * **Given** the user has entered valid payment details and clicked "Pay Now",
+    * **When** the payment is successfully processed by the payment gateway,
+    * **Then** the system **must** display a "Booking Confirmed" message.
+    * **And** the system **must** send a booking confirmation email to the user's registered email address.
+    * **And** the booking status in the system **must** be updated to "Confirmed".
+
+* **AC4: Payment Processing Failure**
+    * **Given** the user has entered invalid payment details or payment processing fails,
+    * **When** the payment attempt is made,
+    * **Then** the system **must** display an appropriate error message (e.g., "Payment Failed: Invalid Card Details" or "Payment Failed: Please try again").
+    * **And** the user **must** remain on the checkout page with their booking summary intact, allowing them to correct details or try again.
+
+* **AC5: Booking Availability Check**
+    * **Given** the user proceeds to checkout,
+    * **When** the system initiates payment processing,
+    * **Then** the system **must** re-verify the availability of the selected booking(s).
+    * **And If** the booking(s) are no longer available, the system **must** notify the user and cancel the checkout process.
